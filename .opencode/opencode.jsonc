@@ -14,6 +14,9 @@
         "region": "us-east-1",
       },
       "models": {
+        // Bedrock Converse API models (standard IAM credentials)
+        "anthropic.claude-sonnet-4-6": {},
+        "anthropic.claude-opus-4-6-v1": {},
         // Bedrock Mantle (OpenAI-compatible endpoint) models
         "kimi-k2.5": {
           "id": "moonshotai.kimi-k2.5",
