@@ -3,9 +3,40 @@
   // "enterprise": {
   //   "url": "https://enterprise.dev.opencode.ai",
   // },
+  "model": "amazon-bedrock/kimi-k2.5",
+  "autoupdate": false,
   "provider": {
     "opencode": {
       "options": {},
+    },
+    "amazon-bedrock": {
+      "options": {
+        "region": "us-east-1",
+      },
+      "models": {
+        // Bedrock Mantle (OpenAI-compatible endpoint) models
+        "kimi-k2.5": {
+          "id": "moonshotai.kimi-k2.5",
+          "provider": {
+            "npm": "@ai-sdk/openai-compatible",
+            "api": "https://bedrock-mantle.us-east-1.api.aws/v1",
+          },
+        },
+        "glm-5": {
+          "id": "zai.glm-5",
+          "provider": {
+            "npm": "@ai-sdk/openai-compatible",
+            "api": "https://bedrock-mantle.us-east-1.api.aws/v1",
+          },
+        },
+        "minimax-m2.5": {
+          "id": "minimax.minimax-m2.5",
+          "provider": {
+            "npm": "@ai-sdk/openai-compatible",
+            "api": "https://bedrock-mantle.us-east-1.api.aws/v1",
+          },
+        },
+      },
     },
   },
   "mcp": {},
